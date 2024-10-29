@@ -52,17 +52,23 @@ export default function Slider() {
           autoplay={{ delay: 3000 }}
         >
           {listings.map(({ data, id }) => (
+            
             <SwiperSlide
               key={id}
               onClick={() => navigate(`/category/${data.type}/${id}`)}
             >
-              <div
+              
+              {<div
+                className="h-[170px] w-full object-cover hover:scale-105 transition-scale duration-200 ease-in"
                 style={{
-                  background: `url(${data.imgUrls[0]}) center, no-repeat`,
+                  background: data.imgUrls && data.imgUrls[0]
+                    ? `url(${data.imgUrls[0]}) center no-repeat`
+                    : 'gray',
                   backgroundSize: "cover",
                 }}
-                className="relative w-full h-[300px] overflow-hidden"
-              ></div>
+                loading="lazy"
+              />}
+              
               <p className="text-[#f1faee] absolute left-1 top-3 font-medium max-w-[90%] bg-[#457b9d] shadow-lg opacity-90 p-2 rounded-br-3xl">
                 {data.name}
               </p>
@@ -72,6 +78,7 @@ export default function Slider() {
               </p>
             </SwiperSlide>
           ))}
+          
         </Swiper>
       </>
     )

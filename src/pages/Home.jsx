@@ -40,7 +40,7 @@ export default function Home() {
         });
         setOfferListings(listings);
       } catch (error) {
-        console.log(error);
+        console.log("offerlisting " + error);
       }
     }
     fetchListings();
@@ -70,7 +70,7 @@ export default function Home() {
         });
         setRentListings(listings);
       } catch (error) {
-        console.log(error);
+        console.log("rentlisting " + error);
       }
     }
     fetchListings();
@@ -100,7 +100,7 @@ export default function Home() {
         });
         setSaleListings(listings);
       } catch (error) {
-        console.log(error);
+        console.log("sale listing" + error);
       }
     }
     fetchListings();
@@ -125,9 +125,11 @@ export default function Home() {
                   id={listing.id}
                 />
               ))}
+              
             </ul>
           </div>
         )}
+        {/* {console.log(offerListings)} */}
         {rentListings && rentListings.length > 0 && (
           <div className="m-2 mb-6">
             <h2 className="px-3 text-2xl mt-6 font-semibold">
