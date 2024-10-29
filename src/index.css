@@ -12,7 +12,7 @@ body{
 }
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
-    background: #a8dadc !important
+    background: #6a53b6 !important
 }
 
 html::-webkit-scrollbar{
@@ -22,3 +22,38 @@ html::-webkit-scrollbar{
 html{
     scrollbar-width: none;
 }
+
+/*
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    @apply bg-customLight;
+  }
+  
+  
+  .dark body {
+    @apply bg-customDark;
+  }
+  
+  
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    color: #a8dadc;
+  }
+  
+  .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: #a8dadc !important;
+  }
+  
+  html::-webkit-scrollbar {
+    display: none;
+  }
+  
+  html {
+    scrollbar-width: none;
+  } 
+*/

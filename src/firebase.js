@@ -6,25 +6,25 @@ import { getAuth } from "firebase/auth"; // Import Auth SDK
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 //Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: "realtor-clone-react.firebaseapp.com",
-  projectId: "realtor-clone-react",
-  storageBucket: "realtor-clone-react.appspot.com",
-  messagingSenderId: "274012290784",
-  appId: "1:274012290784:web:6613bae03bba4331989a85"
-};
-
 // const firebaseConfig = {
-//   apiKey: "AIzaSyCTFdsNOf74GwPSYQTDPcaWshSkVVtp9h8",
-//   authDomain: "atyourdoorstep-a5c85.firebaseapp.com",
-//   databaseURL: "https://atyourdoorstep-a5c85-default-rtdb.firebaseio.com",
-//   projectId: "atyourdoorstep-a5c85",
-//   storageBucket: "atyourdoorstep-a5c85.appspot.com",
-//   messagingSenderId: "30450144760",
-//   appId: "1:30450144760:web:066963a22f44d22289320d",
-//   measurementId: "G-T1GNYCQN4R"
+//   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+//   authDomain: "realtor-clone-react.firebaseapp.com",
+//   projectId: "realtor-clone-react",
+//   storageBucket: "realtor-clone-react.appspot.com",
+//   messagingSenderId: "274012290784",
+//   appId: "1:274012290784:web:6613bae03bba4331989a85"
 // };
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCTFdsNOf74GwPSYQTDPcaWshSkVVtp9h8",
+  authDomain: "atyourdoorstep-a5c85.firebaseapp.com",
+  databaseURL: "https://atyourdoorstep-a5c85-default-rtdb.firebaseio.com",
+  projectId: "atyourdoorstep-a5c85",
+  storageBucket: "atyourdoorstep-a5c85.appspot.com",
+  messagingSenderId: "30450144760",
+  appId: "1:30450144760:web:066963a22f44d22289320d",
+  measurementId: "G-T1GNYCQN4R"
+};
 
 // Initialize Firebase and Firestore with error handling
 let db, auth;
